@@ -17,4 +17,5 @@ class NoteSerializer(serializers.ModelSerializer):
         fields = ["id", "title", "content", "created_at", "author"]
         extra_kwargs = {"author": {"read_only": True}}
 
+def validate(self, data) -- look at rest django docs
 
